@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* { 
+ font-family: 'GyeonggiBatang', serif;
+}
+</style>
+</head>
+<body>
+	<th:block th:replace = "/header"></th:block>
+	
+	<div th:if="${page != null}">
+		<th:block th:replace = "${page}"></th:block>
+	</div>
+</body>
+</html>

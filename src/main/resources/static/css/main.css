@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	float: left;
+}
+
+/*상단 캐러셀*/
+#main_1{
+	background-color: #FFF7ED;
+}
+#main_back{
+	width: 1100px;
+    margin: 0 auto;
+}
+#main_back img{
+	width: 1100px;
+    margin: 0 auto;
+}
+ .carousel-inner > .carousel-item > img{
+       height: 750px;
+} 
+  
+  
+/* 나만의 레시피 알려주기 */
+#main_2{
+	background-color: #4E4F69;
+    transition : 0.4s;
+}
+#myRecipe{
+	width: 1100px;
+    margin: 0 auto;
+    color:white;
+    padding: 10px 80px;
+    position: relative;
+    cursor: pointer;
+}
+#myRecipe p{
+	margin:5px;
+	color: #D8D8D8;
+}
+#myRecipe h2{
+	font-weight: bolder;
+	display: inline-block;
+}
+#myRecipe img{
+	 width: 250px;
+	 position: absolute;
+    top: 11px;
+    right: 11%;
+    transition : 0.4s;
+}
+#main_2:hover img{	
+    right: 7%;
+    transition : 0.4s;
+}
+#main_2:hover{
+	background-color: #434459;
+    transition : 0.4s;
+}
+
+/*인기 레시피*/
+#main_3{
+	padding: 50px 0;
+	width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+#main_3 h2:after{
+	display: block;
+    margin: 18px auto 24px;
+    width: 16px;
+    height: 1px;
+    background-color: #aaa;
+    content: '';
+}
+.populRecipes > ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*개별*/
+li.populRecipe{
+	width: 340px;
+    margin: 20px 40px 20px 0;
+    transition : 0.4s;
+}
+li.populRecipe:nth-child(3n){
+    margin-right: 0;
+}
+.recipe_img{
+	background-color: yellow;
+}
+.recipe_img img{
+	width: 340px;
+    height: 340px;
+    object-fit: cover;   
+}
+.clear{
+	clear: both;
+}
+.subject{
+    height: 161px;
+	padding: 25px;
+	border: 1px solid #f1f1f1;
+	cursor: pointer;
+}
+
+.subject .tag li{
+	margin-right:5px;
+	font-size: 13px;
+	color: #007bff;
+}
+.subject p{
+	margin: 7px 0 5px;
+	font-size: 19px;
+	font-weight: bolder;
+	color:black
+}
+.nickname{
+	display:inline-block;
+	color: gray;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+li.populRecipe:hover{	
+       box-shadow: 5px 5px 30px 7px #ccc;
+       transition : 0.4s;
+}

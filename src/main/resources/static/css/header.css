@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+
+#head_wrap{
+	width: 1100px;
+	margin: 0 auto;
+}
+/*로고*/
+.logo, .head_menu{
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 10px 30px;
+}
+.logo img{
+	width: 180px;
+}
+
+/* 헤더 메뉴 */
+.head_menu{
+	float: right;
+}
+.head_menu ul{
+	list-style: none;
+}
+.head_menu ul li{
+	float: left;
+	margin: 0 10px;
+}
