@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	float: left;
+}
+
+#one_wrap{
+	margin: 0 auto;
+	width: 1100px;
+}
+/*타이틀 박스*/
+#title_box{
+	text-align: center;
+	padding: 50px 20px;
+}
+
+/*상단 메인사진*/
+.title_img{
+	margin : 0 auto;
+	width: 1100px;
+	height: 500px;
+	position: relative;
+	background-color: #FFF7ED;
+}
+.title_img img{
+	width: 700px;
+    height: 100%;
+    object-fit: cover;   	
+}
+/*아이콘*/
+.xi-profile{
+	font-size: 100px;
+	color: #4E4F69;
+	position: absolute;
+    bottom: -50px;
+	left: 42.7%;
+}
+
+/*상단 내용*/
+.title_content{
+	margin-top: 80px;
+}
+.title{
+	font-size: 35px;
+	font-weight: bolder;
+}

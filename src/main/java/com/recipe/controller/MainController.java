@@ -13,9 +13,4 @@ public class MainController {
 		return "view";
 	}
 	
-	@GetMapping("/header")
-	public String main() {
-		return "header";
-	}
-	
 }

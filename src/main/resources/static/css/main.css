@@ -88,6 +88,31 @@ ul li{
 	flex-wrap: wrap;
 }
 
+.more a{
+	color:black;
+    transition : 0.4s;
+}
+.more a:hover{	
+	position: relative;
+    left: 15px;
+	color:black;
+	text-decoration: none;	
+}
+/*하트 */
+.heart{
+	position:relative;	
+}
+.heart .xi-heart, .xi-heart-o{
+	position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size:30px;
+    color:red;
+	cursor:pointer;
+}
+.xi-heart-o{
+	color: black;	
+}
 /*개별*/
 li.populRecipe{
 	width: 340px;
@@ -109,26 +134,42 @@ li.populRecipe:nth-child(3n){
 	clear: both;
 }
 .subject{
-    height: 161px;
+    height: 182px;
 	padding: 25px;
 	border: 1px solid #f1f1f1;
 	cursor: pointer;
 }
 
 .subject .tag li{
-	margin-right:5px;
-	font-size: 13px;
-	color: #007bff;
+	padding: 3px 5px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    font-size: 11px;
+    margin : 2px 5px;
 }
-.subject p{
+.subject .tag li a{
+   color: gray;
+}
+.subject .tag li:hover{
+	background-color: #ECECEC;
+}
+.subject .tag li:hover a{
+	
+	text-decoration: none;	
+	 color: #484848;
+}
+
+.subject .title{
 	margin: 7px 0 5px;
 	font-size: 19px;
 	font-weight: bolder;
-	color:black
+	color:black;
+	max-height: 58px;
+	overflow: hidden;
 }
 .nickname{
 	display:inline-block;
-	color: gray;
+	color: #484848;
 	font-size: 15px;
 	margin-bottom: 10px;
 }

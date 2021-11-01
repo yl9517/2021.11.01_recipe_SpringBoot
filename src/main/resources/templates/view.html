@@ -10,7 +10,7 @@
     font-weight: normal;
     font-style: normal;
 } 
-* { 
+* {
  font-family: 'GyeonggiBatang', serif;
 }
 </style>
@@ -21,5 +21,7 @@
 	<div th:if="${page != null}">
 		<th:block th:replace = "${page}"></th:block>
 	</div>
+	
+	<th:block th:replace = "/footer"></th:block>
 </body>
 </html>

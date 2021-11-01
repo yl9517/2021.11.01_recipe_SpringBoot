@@ -10,7 +10,7 @@
 	 <script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	  <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js}" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	  <script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js}" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" th:href="@{//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css}">
 </head>
 <body>
 	<div id="main_wrap">
@@ -46,20 +46,59 @@
 		</div>
 	
 		<div id="main_3">
-			<h2>인기 레시피</h2>
+			<h2><b>인기 레시피</b></h2>
+			<p class="more"><a th:href="@{/recipe}">view more > </a></p>
 			<div class="populRecipes">
 				<ul>
 					<li class="populRecipe">
+						<div class="heart">
+							<i class="xi-heart"></i> <!-- xi-heart-o -->
+							<div class="recipe_img">
+							 	<a href="#"> <img alt="macaroon" th:src="@{/images/macaroon.jpg}"> </a>
+							</div>
+							<div class="subject">													
+								<p class="title">각양각색 마카롱 만들기입니다구리다구리다구리sfsdfdfsd빠빠빠ㅃ다같이원빠빠빠</p>
+								<span class="nickname">여름</span>
+								
+								<ul class="tag">
+									<li><a href="#">다섯글자요</a></li>
+									<li><a href="#">다섯글자요</a></li>
+									<li><a href="#">다섯글자요</a></li>
+									<li><a href="#">다섯글자요</a></li>
+								</ul>	
+								<div class="clear"></div>
+							</div>
+						</div>
+					</li>
+					<li class="populRecipe">
+						<div class="heart">
+							<i class="xi-heart-o"></i> <!-- xi-heart-o -->
+							<div class="recipe_img">
+							 	<a href="#"> <img alt="macaroon" th:src="@{/images/macaroon.jpg}"> </a>
+							</div>
+							<div class="subject">													
+								<p class="title">각양각색 마카롱 만들기 </p>
+								<span class="nickname">여름</span>
+								
+								<ul class="tag">
+									<li><a href="#">다섯글자요</a></li>
+									<li><a href="#">다섯글자요</a></li>
+									<li><a href="#">다섯글자요</a></li>
+								</ul>	
+								<div class="clear"></div>
+							</div>
+						</div>
+					</li>
+					<li class="populRecipe">
 						<div>
 							<div class="recipe_img">
 							 	<a href="#"> <img alt="macaroon" th:src="@{/images/macaroon.jpg}"> </a>
 							</div>
 							<div class="subject">													
-								<p>각양각색 마카롱 만들기 </p>
+								<p class="title">각양각색 마카롱 만들기 </p>
 								<span class="nickname">여름</span>
 								
 								<ul class="tag">
-									<li><a href="#">다섯글자요</a></li>
 									<li><a href="#">다섯글자요</a></li>
 									<li><a href="#">다섯글자요</a></li>
 									<li><a href="#">다섯글자요</a></li>
@@ -75,45 +114,7 @@
 							 	<a href="#"> <img alt="macaroon" th:src="@{/images/macaroon.jpg}"> </a>
 							</div>
 							<div class="subject">													
-								<p>각양각색 마카롱 만들기 </p>
-								<span class="nickname">여름</span>
-								
-								<ul class="tag">
-									<li><a href="#">다섯글자요</a></li>
-									<li><a href="#">다섯글자요</a></li>
-									<li><a href="#">다섯글자요</a></li>
-								</ul>	
-								<div class="clear"></div>
-							</div>
-						</div>
-					</li>
-					<li class="populRecipe">
-						<div>
-							<div class="recipe_img">
-							 	<a href="#"> <img alt="macaroon" th:src="@{/images/macaroon.jpg}"> </a>
-							</div>
-							<div class="subject">													
-								<p>각양각색 마카롱 만들기 </p>
-								<span class="nickname">여름</span>
-								
-								<ul class="tag">
-									<li><a href="#">다섯글자요</a></li>
-									<li><a href="#">다섯글자요</a></li>
-									<li><a href="#">다섯글자요</a></li>
-									<li><a href="#">다섯글자요</a></li>
-									<li><a href="#">다섯글자요</a></li>
-								</ul>	
-								<div class="clear"></div>
-							</div>
-						</div>
-					</li>
-					<li class="populRecipe">
-						<div>
-							<div class="recipe_img">
-							 	<a href="#"> <img alt="macaroon" th:src="@{/images/macaroon.jpg}"> </a>
-							</div>
-							<div class="subject">													
-								<p>각양각색 마카롱 만들기 </p>
+								<p class="title">각양각색 마카롱 만들기 </p>
 								<span class="nickname">여름</span>
 								
 								<ul class="tag">

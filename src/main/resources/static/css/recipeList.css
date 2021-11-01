@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	float: left;
+}
+#recipe_wrap{
+	width: 1100px;
+	margin: 0 auto;
+}
+/*하ㅡㅌ*/
+.heart{
+	position:relative;	
+}
+.heart .xi-heart, .xi-heart-o{
+	position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size:30px;
+    color:red;
+	cursor:pointer;
+}
+.xi-heart-o{
+	color: black;	
+}
+/*개별*/
+li.oneRecipe{
+	width: 340px;
+    margin: 20px 40px 20px 0;
+    transition : 0.4s;
+}
+li.oneRecipe:nth-child(3n){
+    margin-right: 0;
+}
+.recipe_img{
+	width: 340px;
+    height: 340px;
+}
+.recipe_img img{
+	width: 340px;
+    height: 340px;
+    object-fit: cover;   
+}
+.clear{
+	clear: both;
+}
+.subject{
+    height: 182px;
+	padding: 25px;
+	border: 1px solid #f1f1f1;
+	cursor: pointer;
+	text-align: center;
+}
+
+.subject .tag li{
+	padding: 3px 5px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    font-size: 11px;
+    margin : 2px 5px;
+}
+.subject .tag li a{
+   color: gray;
+}
+.subject .tag li:hover{
+	background-color: #ECECEC;
+}
+.subject .tag li:hover a{
+	
+	text-decoration: none;	
+	 color: #484848;
+}
+.subject .title{
+	margin: 7px 0 5px;
+	font-size: 19px;
+	font-weight: bolder;
+	color:black;
+	max-height: 58px;
+	overflow: hidden;
+	line-height: 1.5;
+}
+.nickname{
+	display:inline-block;
+	color: #484848;
+	font-size: 15px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+li.oneRecipe:hover{	
+       box-shadow: 5px 5px 30px 7px #ccc;
+       transition : 0.4s;
+}
