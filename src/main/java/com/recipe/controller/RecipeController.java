@@ -19,5 +19,10 @@ public class RecipeController {
 		return "view";
 	}
 	
+	@GetMapping("/recipeWrite")
+	public String recipeWrite(Model model) {
+		model.addAttribute("page","recipeWrite.html");
+		return "view";
+	}
 	
 }

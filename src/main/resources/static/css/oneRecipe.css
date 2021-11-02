@@ -24,6 +24,7 @@ ul{
 	text-align: center;
 	padding: 50px 0px;
 	border : 2px solid #f1f1f1;
+	position: relative;
 }
 /*박스 들*/
 #ingredient_box,#video_box, #step_box{
@@ -31,6 +32,11 @@ ul{
 	margin: 10px auto;
 	padding: 50px  0;
 	border : 2px solid #f1f1f1;
+}
+.date{
+	position: absolute;
+	left:30px;
+	top: 17px;
 }
 
 /*상단 메인사진*/
@@ -52,10 +58,33 @@ ul{
     position: relative;
     top: 5px;
 }
-.title_img b{
+.title_img .count_icon, .reply_icon{
 position: absolute;
     bottom: 10px;
     right: 120px;
+}
+.xi-comment-o{
+	font-size: 20px;
+  position: relative;
+    top: 3px;
+}
+.reply_icon{
+    right: 40px;
+	font-size: 16px;
+}
+
+.title_content{
+	position: relative;
+}
+/*하트 아이콘*/
+.xi-heart{
+    position: absolute;
+    right: 25px;
+    bottom: -33px;
+	 font-size:60px;
+    color:red;
+	cursor:pointer;
+	
 }
 /* 프로필아이콘*/
 .xi-profile{
@@ -148,7 +177,9 @@ position: absolute;
 .cook_step li{
 	margin: 30px 0;
 }
-
+ .carousel-inner > .carousel-item > img{
+       width: 900px;
+} 
 /*무단복제*/
 .cc p{
 	width : 1100px;

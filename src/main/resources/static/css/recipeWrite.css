@@ -1,0 +1,22 @@
+#write_wrap{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.title_box{
+	border : 2px solid #f1f1f1;
+	padding: 40px;
+	font-size: 20px;
+}
+
+.title_content label{
+	width: 100px;
+	display: inline-block;
+	margin: 20px 0;
+}
+.title_content input{
+	width: 600px;
+	min-height: 40px;
+	padding: 10px 20px;
+	font-size: 18px;
+}
