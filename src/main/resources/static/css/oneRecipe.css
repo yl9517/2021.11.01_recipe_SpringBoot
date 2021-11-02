@@ -9,10 +9,11 @@ a{
 }
 ul{
 	list-style: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
-ul li{
-	float: left;
-}
+
 
 #one_wrap{
 	margin: 0 auto;
@@ -21,13 +22,21 @@ ul li{
 /*타이틀 박스*/
 #title_box{
 	text-align: center;
-	padding: 50px 20px;
+	padding: 50px 0px;
+	border : 2px solid #f1f1f1;
+}
+/*박스 들*/
+#ingredient_box,#video_box, #step_box{
+	width: 1100px;
+	margin: 10px auto;
+	padding: 50px  0;
+	border : 2px solid #f1f1f1;
 }
 
 /*상단 메인사진*/
 .title_img{
 	margin : 0 auto;
-	width: 1100px;
+	width: 100%;
 	height: 500px;
 	position: relative;
 	background-color: #FFF7ED;
@@ -37,13 +46,24 @@ ul li{
     height: 100%;
     object-fit: cover;   	
 }
-/*아이콘*/
+/*눈 아이콘 */
+.xi-eye-o{
+	font-size: 25px;
+    position: relative;
+    top: 5px;
+}
+.title_img b{
+position: absolute;
+    bottom: 10px;
+    right: 120px;
+}
+/* 프로필아이콘*/
 .xi-profile{
 	font-size: 100px;
 	color: #4E4F69;
 	position: absolute;
     bottom: -50px;
-	left: 42.7%;
+	left: 45.5%;
 }
 
 /*상단 내용*/
@@ -53,4 +73,87 @@ ul li{
 .title{
 	font-size: 35px;
 	font-weight: bolder;
+}
+.subcontent{
+	margin-top: 40px;
+}
+.title_content li{
+	margin: 0 40px;
+	font-size:20px;
+	font-weight: bolder;
+	color: #A3A3A3;
+}
+
+
+/*재료*/
+.ingre{
+	width: 900px;
+	margin: 0px auto;
+}
+#ingredient_box p{
+	margin: 30px 100px 0;
+	font-size: 20px;
+}
+
+/*동영상*/
+
+.video{
+	margin: 0 auto;
+	width: 900px;
+}
+
+.video-container {
+	margin-top:30px;
+	position: relative; 
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	
+}
+.video-container iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%;
+}
+
+/*조리과정*/
+#step_box > div{
+	margin: 0px auto;
+	width: 900px;
+}
+.step_title h3{
+	margin-bottom: 10px;
+}
+.cook_step{
+	user-select: none; 
+}
+.cook_step img{
+	width: 350px;
+	max-height: 350px;
+	border-radius: 5px;
+}
+.cook_step ul,.cook_step h3{
+	display:  inline-block;
+}
+.cook_step h3{
+	vertical-align: top;
+    padding: 20px 0 10px 20px;
+    width: 540px;
+    line-height: 1.3;
+    font-size: 20px;
+}
+.cook_step li{
+	margin: 30px 0;
+}
+
+/*무단복제*/
+.cc p{
+	width : 1100px;
+	margin: 0 auto;
+	background-color: #f1f1f1;
+	padding: 10px 20px;
+	text-align: center;
 }
