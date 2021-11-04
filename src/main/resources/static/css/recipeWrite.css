@@ -20,3 +20,17 @@
 	padding: 10px 20px;
 	font-size: 18px;
 }
+.title_content span{
+	font-size: 17px;
+}
+.title_content select{
+	width: 150px;
+	min-height: 30px;
+	padding: 10px 20px;
+	font-size: 16px;
+	margin-right:30px;
+}
+option{
+	
+	font-size: 16px;
+}
