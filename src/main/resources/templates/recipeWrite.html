@@ -9,8 +9,14 @@
 	<div id="write_wrap">
 		<form>
 			<div class="title_box">
+			
 				<div class="title_img">
-					<img alt="" src="">
+					<input type="file" id="image" name='file1' accept="image/*" style='display: none;' onchange="setThumbnail(event);"/> 
+					
+					<div id="image_container">
+						<img th:src="@{/images/upload.png}" id="titleimg" border='0' onclick='document.all.file1.click(); document.all.file2.value=document.all.file1.value'>  
+					</div>
+
 				</div>
 				<div class="title_content">
 					<label>제목</label>
@@ -48,5 +54,7 @@
 			</div>
 		</form>
 	</div>
+	
+	<script th:src="@{/js/recipeWrite.js}"></script>
 </body>
 </html>
