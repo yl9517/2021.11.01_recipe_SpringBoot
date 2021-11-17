@@ -7,12 +7,19 @@
 	border : 2px solid #f1f1f1;
 	padding: 40px;
 	font-size: 20px;
+	text-align: center;
 }
-
+/*이미지*/
+#titleimg{
+	width: 350px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
 .title_content label{
+	text-align:left;
 	width: 100px;
 	display: inline-block;
-	margin: 20px 0;
+	margin: 25px 0;
 }
 .title_content input{
 	width: 600px;
@@ -20,8 +27,14 @@
 	padding: 10px 20px;
 	font-size: 18px;
 }
+/*요리정보*/
+.sub_info{
+	display:inline-block;
+	width: 600px;
+}
 .title_content span{
 	font-size: 17px;
+	margin-right: 5px;
 }
 .title_content select{
 	width: 150px;
@@ -30,7 +43,6 @@
 	font-size: 16px;
 	margin-right:30px;
 }
-option{
-	
+option{	
 	font-size: 16px;
 }
